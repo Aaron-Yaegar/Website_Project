@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap');
+
+
+@import url('css/sections/hero.css');
+
+/* CSS variables for reusablity across all files (including above imported) */
+:root { 
+  --main-textfont-heads: "Montserrat", sans-serif;
+  --subhead: "Schoolbell", cursive;
+  --parahraphfont: "IM Fell Great Primer", serif;
+
+  --primary-color: #09893c;
+  --secondary-color: #ffbb06;
+
+  --accent-color: #fcecc3;
+  --accent-color2: #fcc96b;
+  --accent-color3: #064e1f;
+  --black-500: #555555;
+  --gray-100: #888888;
+
+  --color-white: #fff;
+  --color-creamson: #fff0de;
+}
+
+/* Basic reset */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE BASE */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #fdb913; /* your yellow-orange background */
+  min-height: 100vh; /* ensures it fills the entire height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* SECTION CONTAINER */
+.about-section {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+}
+
+/* HEADER BOX */
+.about-header {
+  border: 3px solid #000;
+  padding: 10px 40px;
+  margin-bottom: 90px;
+  background-color: transparent;
+}
+
+.about-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  
+}
+
+/* FLEX LAYOUT */
+.about-container {
+  margin-top: 50px;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+
+ 
+}
+
+/* LEFT & RIGHT IMAGE BOXES */
+.about-image {
+  flex: 1 1 250px;
+  border: 3px solid #000;
+  text-align: center;
+  padding: 30px;
+  background-color: var(--primary-color);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #eeff00c0;
+}
+
+.about-image .name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* CENTER TEXT BOX */
+.about-content {
+  flex: 2 1 500px;
+  border: 3px solid #000;
+  padding: 25px 30px;
+  background-color: transparent;
+}
+
+.about-content .member {
+  margin-bottom: 25px;
+}
+
+.about-content h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image,
+  .about-content {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+}
+
+/* OPTIONAL: small padding for phones */
+@media (max-width: 576px) {
+  .about-section {
+    padding: 20px 10px;
+  }
+
+  .about-header h1 {
+    font-size: 1.5rem;
+  }
+}
