@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FEURmoris Magazine</title>
+  <link rel="stylesheet" href="css/feurmoris.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">FEURmoris</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>FROM THE FOREMOST, TO THE FUTURE.</h1>
+      <p>FEURmoris — a student-driven magazine of FEU Roosevelt,<br>
+         celebrating the Tamaraw spirit through stories of creativity, unity, and growth.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <h2>Hello, Tamaraws!</h2>
+    <p>This magazine isn’t just about words and images—it’s about us, our growth,
+    and the spirit that unites us as Tamaraws.</p>
+    <p>Every Tamaraw’s story at FEU Roosevelt is a journey of transition, from fear to confidence,
+    silence to expression, uncertainty to purpose. Through friendships, shared challenges, and mentors
+    who believed in them, they learned that transition isn’t just about change—it’s about becoming.</p>
+  </section>
+
+  <!-- ARTICLES SECTION -->
+  <section id="articles" class="articles">
+    <h2>Taking the Next Chapter</h2>
+    <h3>The Transitions that Define Us</h3>
+
+    <div class="article">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80" alt="Marketing Rebirth">
+      <h4>The Rebirth of Marketing</h4>
+      <p>Before the pandemic, marketing thrived in the energy of face-to-face events, mall activations, 
+         and personal connections. Then 2020 arrived—and everything stopped. But marketers didn’t. 
+         They adapted, innovated, and turned screens into stages.</p>
+    </div>
+
+    <div class="article">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80" alt="Denise Ann Story">
+      <h4>From Culinary Dreams to Marketing Journeys</h4>
+      <p>She once dreamed of becoming a chef, but now she cooks up stories and strategies as a marketer. 
+         Her FEU Roosevelt journey was far from easy; sleepless nights, endless projects, and leadership 
+         challenges tested her in ways she never imagined.</p>
+      <p><strong>Ms. Denise Ann</strong></p>
+    </div>
+
+    <div class="article">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80" alt="Mr. Jason Carlos Story">
+      <h4>The Heart That Never Left: A Teacher’s Journey Through Time</h4>
+      <p>From chalkboards to AI — Sir Jason Carlos has seen it all. A true-blooded Rooseveltian, he began 
+         his journey as a student in 1991 and has spent nearly 30 years shaping minds at FEU Roosevelt.</p>
+      <p><strong>Mr. Jason Carlos</strong></p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> feurmoris.magazine@gmail.com</p>
+    <p><strong>Department:</strong> FEU Roosevelt – BSBA Marketing Management Department</p>
+    <p><strong>Location:</strong> Cainta, Rizal, Philippines</p>
+
+    <h3>Connect with Us</h3>
+    <ul class="social-links">
+      <li><a href="https://www.tiktok.com/@feurmoris?is_from_webapp=1" target="_blank">TikTok: @feurmoris</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=" target="_blank">Facebook: FEURmoris</a></li>
+      <li><a href="https://www.instagram.com/feurmoris/?igsh" target="_blank">Instagram: @feurmoris</a></li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>©2025 FEURMORIS. All rights reserved. | Privacy Policy | Terms of Service</p>
+  </footer>
+
+  <!-- SMOOTH SCROLL -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
